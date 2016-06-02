@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using Exemplo1.Areas.HelpPage.ModelDescriptions;
-using Exemplo1.Areas.HelpPage.Models;
+using exemplo2.Areas.HelpPage.ModelDescriptions;
+using exemplo2.Areas.HelpPage.Models;
 
-namespace Exemplo1.Areas.HelpPage.Controllers
+namespace exemplo2.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.
@@ -33,7 +33,7 @@ namespace Exemplo1.Areas.HelpPage.Controllers
 
         public ActionResult Api(string apiId)
         {
-            if (!string.IsNullOrEmpty(apiId))
+            if (!String.IsNullOrEmpty(apiId))
             {
                 HelpPageApiModel apiModel = Configuration.GetHelpPageApiModel(apiId);
                 if (apiModel != null)
@@ -47,7 +47,7 @@ namespace Exemplo1.Areas.HelpPage.Controllers
 
         public ActionResult ResourceModel(string modelName)
         {
-            if (!string.IsNullOrEmpty(modelName))
+            if (!String.IsNullOrEmpty(modelName))
             {
                 ModelDescriptionGenerator modelDescriptionGenerator = Configuration.GetModelDescriptionGenerator();
                 ModelDescription modelDescription;
