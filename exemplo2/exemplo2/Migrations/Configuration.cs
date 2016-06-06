@@ -20,7 +20,8 @@ namespace exemplo2.Migrations
                        Nome = "produto	1",
                        Codigo = "COD1",
                        Descricao = "descrição  produto 1",
-                       Preco = 10
+                       Preco = 10,
+                       Url = "http://lolo.com.br"
                    },
 
 
@@ -30,7 +31,8 @@ namespace exemplo2.Migrations
                        Nome = "produto	2",
                        Codigo = "COD2",
                        Descricao = "descrição  produto 2",
-                       Preco = 20
+                       Preco = 20,
+                       Url = "http://lolo.com.br"
                    },
 
 
@@ -40,8 +42,10 @@ namespace exemplo2.Migrations
                        Nome = "produto	3",
                        Codigo = "COD3",
                        Descricao = "descrição  produto 3",
-                       Preco = 30
-                   }                   );
+                       Preco = 30,
+                       Url = "http://lolo.com.br"
+                   }
+          );
         }
     }
 }
